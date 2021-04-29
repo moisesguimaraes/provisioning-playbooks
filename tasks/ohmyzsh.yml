@@ -1,0 +1,16 @@
+---
+# Oh My ZSH
+- name: Oh My ZSH | Is present?
+  stat:
+    path: ~/.oh-my-zsh
+  register: oh_my_zsh_home
+
+- name: Oh My ZSH | Install
+  git:
+    repo: git://github.com/robbyrussell/oh-my-zsh.git
+    dest: ~/.oh-my-zsh
+
+- name: Oh My ZSH | Bullet Train Theme
+  get_url:
+    url: https://raw.github.com/caiogondim/bullet-train-oh-my-zsh-theme/master/bullet-train.zsh-theme
+    dest: ~/.oh-my-zsh/themes/bullet-train.zsh-theme
