@@ -43,10 +43,11 @@ homebrew_installed_packages:
   # pyenv
   # pyenv-virtualenv
   # pyenv-virtualenvwrapper
-  - tcl-tk
+  # tcl-tk
   - tox
+  - twine-pypi
   ## git
-  - git-review
+  # git-review
   - pre-commit
   ## chat
   - weechat
@@ -91,10 +92,10 @@ homebrew_cask_apps:
   - firefox
   - google-chrome
   ## virtualization
-  # docker
+  - docker
   # vagrant
   # vagrant-manager
-  # virtualbox
+  - virtualbox
   ## fonts
   - font-fira-code
   ## productivity
@@ -202,6 +203,5 @@ pyenv_virtualenv_packages:
 vscode_extensions:
   - ms-python.python
   - PKief.material-icon-theme
-  - vangware.dark-plus-material
   - EditorConfig.EditorConfig
   - dunstontc.viml
