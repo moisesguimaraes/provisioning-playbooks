@@ -26,6 +26,8 @@ dotfiles_files:
   - bin/hack
   - bin/ship
   - bin/dwf
+  - bin/sclang
+  - bin/scsynth
   - Library/Application Support/Code/User/settings.json
   - Library/KeyBindings/DefaultKeyBinding.dict
   - .config/kitty/kitty.conf
@@ -50,7 +52,7 @@ homebrew_installed_packages:
   # git-review
   - pre-commit
   ## chat
-  - weechat
+  # weechat
   ## images
   - exiftool
   - imagemagick
@@ -65,21 +67,19 @@ homebrew_installed_packages:
   # heroku
 
 homebrew_taps:
-  - homebrew/core
-  - homebrew/cask
   - homebrew/cask-fonts
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   ## backup & identity
   - dropbox
-  - keybase
+  # keybase
   ## games
   # battle-net
-  - cockatrice
-  - epic-games
-  - openemu
-  - steam
+  # cockatrice
+  # epic-games
+  # openemu
+  # steam
   ## terminal
   - kitty
   ## tools
@@ -95,7 +95,7 @@ homebrew_cask_apps:
   - docker
   # vagrant
   # vagrant-manager
-  - virtualbox
+  # virtualbox
   ## fonts
   - font-fira-code
   ## productivity
@@ -119,18 +119,18 @@ homebrew_cask_apps:
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps:
   # { id: 443987910,  name: "1Password" }
-  - { id: 1333542190, name: "1Password 7" }
+  # { id: 1333542190, name: "1Password 7" }
   - { id: 1432731683, name: "Adblock Plus" }
   # { id: 1480070821, name: "Cyph" }
   # { id: 803453959,  name: "Slack" }
-  - { id: 409183694,  name: "Keynote" }
-  - { id: 409201541,  name: "Pages" }
-  - { id: 409203825,  name: "Numbers" }
-  - { id: 408981434,  name: "iMovie" }
+  # { id: 409183694,  name: "Keynote" }
+  # { id: 409201541,  name: "Pages" }
+  # { id: 409203825,  name: "Numbers" }
+  # { id: 408981434,  name: "iMovie" }
   # { id: 682658836,  name: "GarageBand" }
   - { id: 411643860,  name: "DaisyDisk" }
-  - { id: 638161122,  name: "YubiKey Personalization Tool" }
-  - { id: 1116599239, name: "NordVPN IKE" }
+  # { id: 638161122,  name: "YubiKey Personalization Tool" }
+  # { id: 1116599239, name: "NordVPN IKE" }
 mas_email: ""
 mas_password: ""
 
@@ -159,7 +159,7 @@ pip_packages: []
 
 # Glob pattern to ansible task files to run after all other tasks are finished.
 post_provision_tasks:
-  - tasks/ohmyzsh.yml
+  # tasks/ohmyzsh.yml
   # tasks/pyenv.yml
   - tasks/vscode.yml
 
